@@ -3,12 +3,11 @@ import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import { Meteors } from "@/components/magicui/meteors";
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
-import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 ---
 
-	<!-- <div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" /> -->
+<div id="container">
+	<img id="background" src={background.src} alt="" fetchpriority="high" /> 
 	
 	<!-- Meteors background effect
 	<div class="meteors-container ">
@@ -30,8 +29,7 @@ import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-b
 			</h1>
 			<h1>for your business.</h1>
 			<section id="links">
-				<a ><InteractiveHoverButton>About Me</InteractiveHoverButton>
-					</a>
+				<a class="button" href="https://docs.astro.build">About Me</a>
 				<a href="https://astro.build/chat"
 					>Projects <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"
 						><path
@@ -50,9 +48,7 @@ import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-b
 				</a>
 
 			</section>
-
 		</section>
-	
 	</main>
 
 	<a href="https://astro.build/blog/astro-5/" id="news" class="box">
