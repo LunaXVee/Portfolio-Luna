@@ -1,48 +1,25 @@
 ---
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
+import { Meteors } from "@/components/magicui/meteors";
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
-import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
+import ProjectsSection from './ProjectsSection.astro';
 import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggler";
+import Navbar from "../components/NavBar.jsx";
 
-const projects = [
-  {
-    name: "Project One",
-    description: "This is my first project.",
-    href: "/projects/project-one",
-    cta: "View More",
-    image: "/images/project1.png"
-  },
-  {
-    name: "Project Two",
-    description: "Another cool project.",
-    href: "/projects/project-two",
-    cta: "Check It Out",
-    image: "/images/project2.png"
-  },
-  {
-    name: "Project Three",
-    description: "Something even cooler.",
-    href: "/projects/project-three",
-    cta: "Explore",
-    image: "/images/project3.png"
-  },
-];
 ---
 
-<div id="container">
-	<main>
-		<section id="projects" class="p-8">
-			<BentoGrid>
-				{features.map((feature, idx) => (
-				  <BentoCard key={idx} {...feature} />
-				))}
-			  </BentoGrid>
-		</section>
+  
+<Navbar client:load />
+	
 	</main>
+
+	
 </div>
 
 <style>
+
 	#background {
 		position: fixed;
 		top: 0;
@@ -53,20 +30,28 @@ const projects = [
 		filter: blur(100px);
 	}
 
-	.grid-container {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100vh;
-		z-index: -1;
-		pointer-events: none;
+	.toggler{
+		display: flex;
+		justify-content: center;
+		width: 60px;
+  height: 60px;
 	}
+
 	
-	.grid-container > * {
-		width: 100% !important;
-		height: 100% !important;
-	}
+	.grid-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	pointer-events: none;
+}
+.grid-container > * {
+    width: 100% !important;
+    height: 100% !important;
+}
+
 
 	#container {
 		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
@@ -88,7 +73,7 @@ const projects = [
 	}
 
 	h1 {
-		font-size: 42px;
+		font-size: 62px;
 		margin-top: 0.25em;
 		font-weight: bold;
 	}
@@ -96,6 +81,7 @@ const projects = [
 	#links {
 		display: flex;
 		gap: 16px;
+		
 	}
 
 	#links a {
@@ -105,6 +91,7 @@ const projects = [
 		color: #111827;
 		text-decoration: none;
 		transition: color 0.2s;
+		font-size: 25px;
 	}
 
 	#links a:hover {
@@ -129,6 +116,14 @@ const projects = [
 		color: rgb(230, 230, 230);
 		box-shadow: none;
 	}
+
+	:root.dark #links a {
+  color: white;
+}
+
+:root.dark #links a:hover {
+  color: #d1d5db; /* Tailwind's gray-300 */
+}
 
 	pre {
 		font-family:
@@ -157,11 +152,35 @@ const projects = [
 		margin: 0;
 	}
 
+	code {
+		display: inline-block;
+		background:
+			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
+			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
+		border-radius: 8px;
+		border: 1px solid transparent;
+		padding: 6px 8px;
+	}
+
 	.box {
 		padding: 16px;
 		background: rgba(255, 255, 255, 1);
 		border-radius: 16px;
 		border: 1px solid white;
+	}
+
+	#news {
+		position: absolute;
+		bottom: 16px;
+		right: 16px;
+		max-width: 300px;
+		text-decoration: none;
+		transition: background 0.2s;
+		backdrop-filter: blur(50px);
+	}
+
+	#news:hover {
+		background: rgba(255, 255, 255, 0.55);
 	}
 
 	@media screen and (max-height: 368px) {
@@ -175,6 +194,24 @@ const projects = [
 			display: flex;
 			flex-direction: column;
 		}
+
+		@media (min-width: 640px) {
+			h1 {
+				font-size: 48px; /* sm */
+			}
+			}
+
+			@media (min-width: 768px) {
+			h1 {
+				font-size: 60px; /* md */
+			}
+			}
+
+			@media (min-width: 1024px) {
+			h1 {
+				font-size: 72px; /* lg */
+			}
+			}
 
 		#hero {
 			display: block;
@@ -200,4 +237,6 @@ const projects = [
 			line-height: 1.5;
 		}
 	}
+
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Unbounded:wght@200..900&display=swap');
 </style>
