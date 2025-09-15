@@ -7,7 +7,7 @@ const LatestWorks = () => {
       id: 1,
       title: "App Design",
       description: "Mobile application design with modern UI/UX principles",
-      image: "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+      image: "/images/project7.png",
       category: "Mobile App",
       color: "bg-amber-500"
     },
@@ -15,7 +15,7 @@ const LatestWorks = () => {
       id: 2,
       title: "Web Design",
       description: "Responsive web application with clean and modern interface",
-      image: "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp",
+      image: "/images/project2.png",
       category: "Website",
       color: "bg-teal-600"
     },
@@ -23,7 +23,7 @@ const LatestWorks = () => {
       id: 3,
       title: "Brand Identity",
       description: "Complete brand identity package with logo and guidelines",
-      image: "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
+      image: "/images/project4.JPG",
       category: "Branding",
       color: "bg-orange-500"
     }
