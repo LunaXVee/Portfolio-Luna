@@ -22,7 +22,7 @@ export default function Navbar() {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Luna</a>
+    <a className="btn btn-ghost text-xl">LunaXVee</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -40,7 +40,7 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn  bg-button border-0 ">Lets Connect</a>
+    <a className="btn  bg-button border-0 mr-12">Lets Connect</a>
   </div>
 </div>
  );
