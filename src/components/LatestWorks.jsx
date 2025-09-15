@@ -6,7 +6,7 @@ const LatestWorks = () => {
     {
       id: 1,
       title: "App Design",
-      description: "Mobile application design with modern UI/UX principles",
+      description: "Mobile application for AI powered SMS educational chatbot design with modern UI/UX principles",
       image: "/images/project7.png",
       category: "Mobile App",
       color: "bg-amber-500"
@@ -36,13 +36,13 @@ const LatestWorks = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
             <h2 className="text-4xl font-bold text-[#0A3044]">My Latest Works</h2>
-            <div className="ml-4 w-20 h-1 bg-pink-400 rounded-full"></div>
+            <div className="ml-4 w-20 h-1 bg-button rounded-full"></div>
           </div>
           <p className="text-lg text-[#6c757d] mb-8">
             Perfect solution for digital experience
           </p>
           <div className="flex justify-center">
-            <button className="btn btn-outline btn-error">
+            <button className="btn btn-outline  btn-error">
               Explore More Works
             </button>
           </div>
@@ -87,7 +87,7 @@ const LatestWorks = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-[#6c757d] mb-4">Swipe up to explore area</p>
-          <div className="w-12 h-1 bg-pink-400 mx-auto rounded-full"></div>
+          <div className="w-12 h-1 bg-button mx-auto rounded-full"></div>
         </div>
       </div>
     </section>
