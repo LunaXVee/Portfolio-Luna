@@ -8,6 +8,8 @@ import ProjectsSection from './ProjectsSection.astro';
 import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggler";
 import Navbar from "../components/NavBar.jsx";
 import LatestWorks from '../components/LatestWorks.jsx';
+import ContactForm from '../components/ContactForm.jsx'; // ← Add this import
+
 
 
 ---
@@ -111,22 +113,24 @@ import LatestWorks from '../components/LatestWorks.jsx';
     </div>
 </section>
 <section class="latest-works-section">
-
-
 			 <!-- Latest Works Section -->
 			 <LatestWorks client:load />
-
-
-
 </section>
 
+<!-- Contact Form Section - Add this new section -->
+<section class="contact-section">
+    <ContactForm client:only="react" />
+</section>
 
 <style>
 	.latest-works-section {
     background: #F8F7F2;
 
-
 }
+.contact-section {
+    background: #ffffff;
+}
+
 main{
 	background: #F8F7F2;
 }	
