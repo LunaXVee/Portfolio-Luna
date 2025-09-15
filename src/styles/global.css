@@ -60,6 +60,9 @@
 .bg-custom {
   background-color: #F8F7F2 !important;
 }
+.bg-button{
+  background-color: #F48F71;
+}
 
 :root {
   --radius: 0.625rem;
