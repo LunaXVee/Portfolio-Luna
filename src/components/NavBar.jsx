@@ -40,7 +40,7 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn  bg-button border-0">Lets Connect</a>
+    <a className="btn  bg-button border-0 ">Lets Connect</a>
   </div>
 </div>
  );

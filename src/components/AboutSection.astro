@@ -9,6 +9,7 @@ import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggle
 import Navbar from "../components/NavBar.jsx";
 import LatestWorks from '../components/LatestWorks.jsx';
 import ContactForm from '../components/ContactForm.jsx'; // ← Add this import
+import Footer from '../components/Footer.jsx'; // ← Add this import
 
 
 
@@ -122,6 +123,11 @@ import ContactForm from '../components/ContactForm.jsx'; // ← Add this import
     <ContactForm client:only="react" />
 </section>
 
+<!-- Footer Section -->
+<section class="footer-section">
+    <Footer />
+</section>
+
 <style>
 	.latest-works-section {
     background: #F8F7F2;
@@ -129,6 +135,10 @@ import ContactForm from '../components/ContactForm.jsx'; // ← Add this import
 }
 .contact-section {
     background: #ffffff;
+}
+
+.footer-section {
+    background: #F8F7F2; /* Cream background to match your alternating pattern */
 }
 
 main{

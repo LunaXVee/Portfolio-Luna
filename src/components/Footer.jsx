@@ -25,7 +25,7 @@ const Footer = () => {
               href="mailto:majahav@africau.edu" 
               className="text-[#6c757d] hover:text-[#0A3044] text-sm transition-colors duration-200"
             >
-              majahav@africau.edu
+              Designed and built by Vimbai Luna
             </a>
             {/* Add social links here if needed */}
           </div>
