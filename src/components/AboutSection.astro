@@ -12,6 +12,7 @@ import ContactForm from '../components/ContactForm.jsx'; // ← Add this import
 import Footer from '../components/Footer.jsx'; // ← Add this import
 import { Highlighter } from "@/components/magicui/highlighter";
 import BioSection from '../components/BioSection.jsx'; // ← Add this
+import ScrollingTechStack from '../components/ScrollingTechStack.jsx';
 
 
 
@@ -52,7 +53,12 @@ import BioSection from '../components/BioSection.jsx'; // ← Add this
 </div>
 	
 </div>
+<ScrollingTechStack client:load />
+
+
 </main>
+
+
 <!-- What Do I Help Section -->
 <section class="help-section">
     <div class="help-container">
@@ -261,28 +267,6 @@ main{
     margin-bottom: 3rem;
 }
 
-.certification {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.cert-badge {
-    width: 80px;
-    height: 80px;
-    border: 3px solid #1e293b;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    /* Add your tree/badge icon styling here */
-}
-
-.certification p {
-    font-size: 1.1rem;
-    color: #64748b;
-    font-weight: 500;
-    text-align: center;
-    max-width: 200px;
-}
 
 .help-section {
     background: #ffffff;
