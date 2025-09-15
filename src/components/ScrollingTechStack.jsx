@@ -91,7 +91,8 @@ const ScrollingTechStack = () => {
   return (
     <section className="py-20 px-4 bg-white overflow-hidden">
       <div className="max-w-6xl  text-center">
-       
+        
+
 
         {/* Infinite scroll container */}
         <div className="relative">
