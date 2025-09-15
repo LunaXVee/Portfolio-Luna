@@ -5,24 +5,24 @@ const LatestWorks = () => {
   const projects = [
     {
       id: 1,
-      title: "App Design",
-      description: "Mobile application for AI powered SMS educational chatbot design with modern UI/UX principles",
+      title: "FUNDISA",
+      description: "AI powered SMS educational chatbot that uses both English and Shona",
       image: "/images/project7.png",
       category: "Mobile App",
       color: "bg-amber-500"
     },
     {
       id: 2,
-      title: "Web Design",
-      description: "Responsive web application with clean and modern interface",
+      title: "TFT Database",
+      description: "Responsive farmer's membership database with clean and modern interface",
       image: "/images/project2.png",
       category: "Website",
       color: "bg-teal-600"
     },
     {
       id: 3,
-      title: "Brand Identity",
-      description: "Complete brand identity package with logo and guidelines",
+      title: "3D Interactive Website",
+      description: "Responsive 3D web application where heads of characters turn to face the computer mouse in real-time",
       image: "/images/project4.JPG",
       category: "Branding",
       color: "bg-orange-500"
