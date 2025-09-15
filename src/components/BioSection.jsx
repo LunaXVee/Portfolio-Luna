@@ -9,22 +9,20 @@ const BioSection = () => {
         fontSize: '2rem',
         fontWeight: '700', 
         color: '#0A3044',
-        lineHeight: '1.2',
+        lineHeight: '1.5',
         textAlign: 'center',
         marginRight: '3rem'
       }}>
         I develop{" "}
-        <Highlighter action="highlight" color="#87CEFA" animationDuration={800}>
+        <Highlighter action="box" color="#20b2aa" animationDuration={1200}>
           custom software solutions
         </Highlighter>{" "}
-        that help{" "}
-        <Highlighter action="underline" color="#F48F71" animationDuration={1000}>
-          businesses grow
-        </Highlighter>{" "}
+        that help businesses grow
         and{" "}
-        <Highlighter action="box" color="#20b2aa" animationDuration={1200}>
-          communities thrive
-        </Highlighter>
+        <Highlighter action="underline" color="#F48F71" animationDuration={1000}>
+         communities thrive
+         </Highlighter>{" "}
+
       </h2>
       
      
