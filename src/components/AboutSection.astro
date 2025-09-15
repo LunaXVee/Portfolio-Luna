@@ -44,6 +44,71 @@ import Navbar from "../components/NavBar.jsx";
 	
 </div>
 </main>
+<!-- What Do I Help Section -->
+<section class="help-section">
+    <div class="help-container">
+        <!-- Left Column - Services and Stats -->
+        <div class="help-left">
+            <!-- Services List -->
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-icon teal">
+                        <img src="/images/monitor.svg" alt="Website Design" class="service-svg" />
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Website & Databse Design</h3>
+                        <p class="service-count">76 Projects</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon yellow">
+						<svg viewBox="0 0 24 24">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Mobile App Design</h3>
+                        <p class="service-count">63 Projects</p>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon orange">
+                        <img src="/images/slack.svg" alt="Brand Identity" class="service-svg" />
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">AI Workflow Integration</h3>
+                        <p class="service-count">47 Projects</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">Project Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column - Title and Description -->
+        <div class="help-right">
+            <h2 class="help-title">How can I help you?</h2>
+            <p class="help-description">
+                I build digital solutions that help solve your problems. We use process design to create digital products. Besides that also help their business.
+            </p>
+            <p class="help-description">
+                We use process design to create digital products. Besides that also help their business.
+            </p>
+        </div>
+    </div>
+</section>
 
 <style>
 main{
@@ -150,6 +215,200 @@ main{
     max-width: 200px;
 }
 
+.help-section {
+    background: #F8F7F2;
+    padding: 100px 0 80px 0; /* Extra top padding for spacing from first section */
+}
+
+.help-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    align-items: start;
+}
+
+.help-left {
+    padding-right: 2rem;
+}
+
+.help-right {
+    padding-left: 2rem;
+}
+
+.help-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #0A3044;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.help-description {
+    color: #6c757d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services-list {
+    margin-bottom: 3rem;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(10, 48, 68, 0.1);
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.service-icon.teal {
+    background-color: #20b2aa;
+}
+
+.service-icon.yellow {
+    background-color: #ffd700;
+}
+
+.service-icon.orange {
+    background-color: #ff6b47;
+}
+
+.service-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    fill: none;
+    stroke-width: 2;
+}
+
+/* Add this missing CSS for your SVG images */
+.service-svg {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Makes SVG icons white */
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0A3044;
+    margin-bottom: 0.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-count {
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stats-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.stat-item {
+    text-align: left;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0A3044;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .help-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .help-left,
+    .help-right {
+        padding: 0;
+    }
+    
+    .help-title {
+        font-size: 2.5rem;
+    }
+    
+    .stats-container {
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .help-section {
+        padding: 80px 0 60px 0;
+    }
+    
+    .help-container {
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+    
+    .help-title {
+        font-size: 2rem;
+    }
+    
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 1rem;
+    }
+    
+    .service-svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+}
 @media screen and (max-width: 1024px) {
     .about-content {
         grid-template-columns: 1fr; /* Stack vertically on smaller screens */
