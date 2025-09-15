@@ -5,199 +5,105 @@ import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pa
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggler";
 
-const projects = [
-  {
-    name: "Project One",
-    description: "This is my first project.",
-    href: "/images/project1.png",
-    cta: "View More",
-    image: "/images/project1.png"
-  },
-  {
-    name: "Project Two",
-    description: "Another cool project.",
-    href: "/projects/project-two",
-    cta: "Check It Out",
-    image: "/images/project2.png"
-  },
-  {
-    name: "Project Three",
-    description: "Something even cooler.",
-    href: "/projects/project-three",
-    cta: "Explore",
-    image: "/images/project3.png"
-  },
-];
----
-
-<div id="container">
-	<main>
-		<section id="projects" class="p-8">
-			<BentoGrid>
-				{features.map((feature, idx) => (
-				  <BentoCard key={idx} {...feature} />
-				))}
-			  </BentoGrid>
-		</section>
-	</main>
-</div>
-
-<style>
-	#background {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		filter: blur(100px);
-	}
-
-	.grid-container {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100vh;
-		z-index: -1;
-		pointer-events: none;
-	}
-	
-	.grid-container > * {
-		width: 100% !important;
-		height: 100% !important;
-	}
-
-	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
-	}
-
-	main {
-		height: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	#hero {
-		display: flex;
-		align-items: start;
-		flex-direction: column;
-		justify-content: center;
-		padding: 16px;
-	}
-
-	h1 {
-		font-size: 42px;
-		margin-top: 0.25em;
-		font-weight: bold;
-	}
-
-	#links {
-		display: flex;
-		gap: 16px;
-	}
-
-	#links a {
-		display: flex;
-		align-items: center;
-		padding: 10px 12px;
-		color: #111827;
-		text-decoration: none;
-		transition: color 0.2s;
-	}
-
-	#links a:hover {
-		color: rgb(78, 80, 86);
-	}
-
-	#links a svg {
-		height: 1em;
-		margin-left: 8px;
-	}
-
-	#links a.button {
-		color: white;
-		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-		box-shadow:
-			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
-		border-radius: 10px;
-	}
-
-	#links a.button:hover {
-		color: rgb(230, 230, 230);
-		box-shadow: none;
-	}
-
-	pre {
-		font-family:
-			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
-			monospace;
-		font-weight: normal;
-		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		margin: 0;
-	}
-
-	h2 {
-		margin: 0 0 1em;
-		font-weight: normal;
-		color: #111827;
-		font-size: 20px;
-	}
-
-	p {
-		color: #4b5563;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.006em;
-		margin: 0;
-	}
-
-	.box {
-		padding: 16px;
-		background: rgba(255, 255, 255, 1);
-		border-radius: 16px;
-		border: 1px solid white;
-	}
-
-	@media screen and (max-height: 368px) {
-		#news {
-			display: none;
-		}
-	}
-
-	@media screen and (max-width: 768px) {
-		#container {
-			display: flex;
-			flex-direction: column;
-		}
-
-		#hero {
-			display: block;
-			padding-top: 10%;
-		}
-
-		#links {
-			flex-wrap: wrap;
-		}
-
-		#links a.button {
-			padding: 14px 18px;
-		}
-
-		#news {
-			right: 16px;
-			left: 16px;
-			bottom: 2.5rem;
-			max-width: 100%;
-		}
-
-		h1 {
-			line-height: 1.5;
-		}
-	}
-</style>
+export default function Example() {
+  return (
+    <div class="bg-gray-50 py-24 sm:py-32">
+      <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+        <h2 class="text-center text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
+        <p class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
+          Everything you need to deploy your app
+        </p>
+        <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+          <div class="relative lg:row-span-2">
+            <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-4xl" />
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+              <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                  Mobile friendly
+                </p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                </p>
+              </div>
+              <div class="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
+                <div class="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                  <img
+                    alt=""
+                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png"
+                    class="size-full object-cover object-top"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 lg:rounded-l-4xl" />
+          </div>
+          <div class="relative max-lg:row-start-1">
+            <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-4xl" />
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+              <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Performance</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.
+                </p>
+              </div>
+              <div class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
+                <img
+                  alt=""
+                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-performance.png"
+                  class="w-full max-lg:max-w-xs"
+                />
+              </div>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl" />
+          </div>
+          <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+            <div class="absolute inset-px rounded-lg bg-white" />
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+              <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Security</p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi.
+                </p>
+              </div>
+              <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
+                <img
+                  alt=""
+                  src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-security.png"
+                  class="h-[min(152px,40cqw)] object-cover"
+                />
+              </div>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5" />
+          </div>
+          <div class="relative lg:row-span-2">
+            <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-4xl lg:rounded-r-4xl" />
+            <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+              <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                  Powerful APIs
+                </p>
+                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget sem sodales gravida.
+                </p>
+              </div>
+              <div class="relative min-h-120 w-full grow">
+                <div class="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl outline outline-white/10">
+                  <div class="flex bg-gray-900 outline outline-white/5">
+                    <div class="-mb-px flex text-sm/6 font-medium text-gray-400">
+                      <div class="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2 text-white">
+                        NotificationSetting.jsx
+                      </div>
+                      <div class="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
+                    </div>
+                  </div>
+                  <div class="px-6 pt-6 pb-14">{/* Your code example */}</div>
+                </div>
+              </div>
+            </div>
+            <div class="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-b-4xl lg:rounded-r-4xl" />
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

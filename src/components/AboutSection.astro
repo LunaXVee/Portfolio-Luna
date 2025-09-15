@@ -7,6 +7,8 @@ import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-b
 import ProjectsSection from './ProjectsSection.astro';
 import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggler";
 import Navbar from "../components/NavBar.jsx";
+import LatestWorks from '../components/LatestWorks.jsx';
+
 
 ---
 
@@ -108,12 +110,27 @@ import Navbar from "../components/NavBar.jsx";
         </div>
     </div>
 </section>
+<section class="latest-works-section">
+
+
+			 <!-- Latest Works Section -->
+			 <LatestWorks client:load />
+
+
+
+</section>
+
 
 <style>
+	.latest-works-section {
+    background: #F8F7F2;
+
+
+}
 main{
 	background: #F8F7F2;
 }	
-	
+
 .about-content {
     display: grid;
     grid-template-columns: 1fr auto 1fr; /* left flexible, center auto-size, right flexible */
@@ -349,6 +366,8 @@ main{
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
 }
+
+
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
