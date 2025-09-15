@@ -29,9 +29,12 @@ import BioSection from '../components/BioSection.jsx'; // ← Add this
         <h1>Hello There!</h1>
         <h1>I'm Luna</h1>
         <div class="experience">
-            <span class="number">4</span>
-            <span class="label">Years Experience</span>
-        </div>
+			<span class="number">4</span>
+			<div class="label">
+				<span>YEARS</span>
+				<span>EXPERIENCE</span>
+			</div>
+		</div>
     </div>
     
     <!-- Center image -->
@@ -93,12 +96,12 @@ import BioSection from '../components/BioSection.jsx'; // ← Add this
             <!-- Stats -->
             <div class="stats-container">
                 <div class="stat-item">
-                    <div class="stat-number">12+</div>
-                    <div class="stat-label">Project Completed</div>
+                    <div class="stat-number"></div>
+                    <div class="stat-label"></div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">8+</div>
-                    <div class="stat-label">Happy Clients</div>
+                    <div class="stat-number"></div>
+                    <div class="stat-label"></div>
                 </div>
             </div>
         </div>
@@ -206,22 +209,30 @@ main{
 
 .experience {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Align to right since text-align is right */
-	margin-top: 3rem;
+    flex-direction: row; /* Change to row for side-by-side layout */
+    align-items: flex-start; /* Align to top */
+    margin-top: 6rem;
+	margin-left: 8rem;
 }
 
 .experience .number {
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 800;
     color: #0A3044;
-    line-height: 1;
+    line-height: 0.8;
+    margin-right: 0.5rem; /* Space between number and text */
 }
 
 .experience .label {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #0A3044;
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    display: flex;
+	margin-top: 0.5rem;
+    flex-direction: column; /* Stack YEARS and EXPERIENCE vertically */
 }
 
 .center-image {
@@ -315,6 +326,7 @@ main{
 
 .services-list {
     margin-bottom: 3rem;
+	margin-top: 3rem;
 }
 
 .service-item {
