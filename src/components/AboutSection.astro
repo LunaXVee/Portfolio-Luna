@@ -11,6 +11,7 @@ import LatestWorks from '../components/LatestWorks.jsx';
 import ContactForm from '../components/ContactForm.jsx'; // ← Add this import
 import Footer from '../components/Footer.jsx'; // ← Add this import
 import { Highlighter } from "@/components/magicui/highlighter";
+import BioSection from '../components/BioSection.jsx'; // ← Add this
 
 
 
@@ -25,9 +26,8 @@ import { Highlighter } from "@/components/magicui/highlighter";
 
     <!-- Left side text -->
     <div class="left-text">
-        <h1>Hey There,</h1>
+        <h1>Hello There!</h1>
         <h1>I'm Luna</h1>
-        <p>majahav@africau.edu</p>
         <div class="experience">
             <span class="number">4</span>
             <span class="label">Years Experience</span>
@@ -41,7 +41,9 @@ import { Highlighter } from "@/components/magicui/highlighter";
     
     <!-- Right side text -->
     <div class="right-text">
-        <h2>I develop custom software solutions that help businesses grow and communities thrive</h2>
+		<BioSection client:only="react" />
+
+
        
     </div>
 </div>
@@ -127,6 +129,37 @@ import { Highlighter } from "@/components/magicui/highlighter";
 </section>
 
 <style>
+	/* Add these animations to your existing <style> section */
+@keyframes fadeInHighlight {
+  0% {
+    background-size: 0% 100%;
+    opacity: 0;
+  }
+  100% {
+    background-size: 100% 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUnderline {
+  0% {
+    border-bottom-width: 0px;
+  }
+  100% {
+    border-bottom-width: 3px;
+  }
+}
+
+@keyframes fadeInBox {
+  0% {
+    border-color: transparent;
+    transform: scale(0.95);
+  }
+  100% {
+    border-color: currentColor;
+    transform: scale(1);
+  }
+}
 	.latest-works-section {
     background: #F8F7F2;
 
@@ -153,8 +186,7 @@ main{
 }
 
 .left-text {
-    text-align: right; /* Align text toward the center image */
-    padding-right: 1rem; /* Small gap from the image */
+    text-align: center; /* Align text toward the center image */
 }
 
 .left-text h1 {
@@ -176,6 +208,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: flex-end; /* Align to right since text-align is right */
+	margin-top: 3rem;
 }
 
 .experience .number {
@@ -207,7 +240,6 @@ main{
 
 .right-text {
     text-align: left; /* Align text away from center */
-    padding-left: 7rem; /* Small gap from the image */
 }
 
 .right-text h2 {
