@@ -1,4 +1,4 @@
-// LatestWorks.jsx - React Component
+// LatestWorks.jsx - React Component with Dark Theme
 import React from 'react';
 
 const LatestWorks = () => {
@@ -30,19 +30,19 @@ const LatestWorks = () => {
   ];
 
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4" style={{ backgroundColor: '#0A3044' }}> {/* Dark background */}
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
-            <h2 className="text-4xl font-bold text-[#0A3044]">My Latest Works</h2>
+            <h2 className="text-4xl font-bold text-white">My Latest Works</h2> {/* White text */}
             <div className="ml-4 w-20 h-1 bg-button rounded-full"></div>
           </div>
-          <p className="text-lg text-[#6c757d] mb-8">
+          <p className="text-lg text-gray-300 mb-8"> {/* Light gray text */}
             Perfect solution for digital experience
           </p>
           <div className="flex justify-center">
-            <button className="btn btn-outline  btn-error">
+            <button className="btn btn-outline text-white border-white hover:bg-white hover:text-[#0A3044]"> {/* White outline button */}
               Explore More Works
             </button>
           </div>
@@ -51,8 +51,8 @@ const LatestWorks = () => {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {projects.map((project) => (
-            <div key={project.id} className="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <figure className="relative overflow-hidden">
+            <div key={project.id} className="card bg-white shadow-lg hover:shadow-xl transition-shadow duration-300"> {/* White card background */}
+              <figure className="relative overflow-hidden border-b border-gray-200">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -64,18 +64,18 @@ const LatestWorks = () => {
                 </div>
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-xl font-bold text-base-content">
+                <h2 className="card-title text-xl font-bold text-[#0A3044]"> {/* Dark text for title */}
                   {project.title}
                 </h2>
-                <p className="text-base-content/70 text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed"> {/* Dark gray text for description */}
                   {project.description}
                 </p>
                 <div className="card-actions justify-between items-center mt-4">
                   <div className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-xs text-base-content/50">2024</span>
+                    <div className="w-2 h-2 bg-[#0A3044] rounded-full"></div> {/* Dark dot */}
+                    <span className="text-xs text-gray-500">2024</span> {/* Dark gray text */}
                   </div>
-                  <button className="btn btn-primary btn-sm">
+                  <button className="btn btn-sm text-white" style={{ backgroundColor: '#0A3044' }}> {/* Dark button */}
                     View Project
                   </button>
                 </div>
@@ -86,7 +86,7 @@ const LatestWorks = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <p className="text-[#6c757d] mb-4">Swipe up to explore area</p>
+          <p className="text-gray-300 mb-4">Swipe up to explore area</p> {/* Light text */}
           <div className="w-12 h-1 bg-button mx-auto rounded-full"></div>
         </div>
       </div>
