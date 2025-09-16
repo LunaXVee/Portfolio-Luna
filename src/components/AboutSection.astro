@@ -45,15 +45,15 @@ import ScrollingTechStack from '../components/ScrollingTechStack.jsx';
     
     <!-- Right side text -->
     <div class="right-text">
-		<BioSection client:only="react" />
-
-
-       
+		<BioSection client:only="react" /> 
     </div>
 </div>
-	
 </div>
+
+<section class="tech">
 <ScrollingTechStack client:load />
+</section>
+
 </main>
 <!-- What Do I Help Section -->
 <section class="help-section">
@@ -133,8 +133,15 @@ import ScrollingTechStack from '../components/ScrollingTechStack.jsx';
     <Footer />
 </section>
 
+
+
 <style>
 	/* Add these animations to your existing <style> section */
+
+.tech{
+    background-color: #0A3044;
+    color: #F8F7F2;
+}
 @keyframes fadeInHighlight {
   0% {
     background-size: 0% 100%;
