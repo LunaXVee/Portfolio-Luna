@@ -89,7 +89,7 @@ const ScrollingTechStack = () => {
   ];
 
   return (
-    <section className="py-2 px-4 style={{ backgroundColor: '#0A3044' }} overflow-hidden">
+    <section className="py-2 px-4 style={{ backgroundColor: '#09090B' }} overflow-hidden">
       <div className="max-w-6xl  text-center">
         
 

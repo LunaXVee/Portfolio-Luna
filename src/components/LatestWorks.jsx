@@ -27,10 +27,10 @@ const LatestWorks = () => {
       category: "Branding",
       color: "bg-orange-500"
     }
-  ];
+  ]
 
   return (
-    <section className="py-16 px-4" style={{ backgroundColor: '#0A3044' }}> {/* Dark background */}
+    <section className="py-16 px-4" style={{ backgroundColor: '#09090B' }}> {/* Dark background */}
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">

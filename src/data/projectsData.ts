@@ -17,7 +17,7 @@ export interface Project {
       description: "A modern e-commerce solution with React and Node.js, featuring real-time inventory management and secure payment processing.",
       href: "/projects/ecommerce",
       cta: "View Project",
-      image: "/images/project1.png",
+      image: "/images/project7.png",
       className: "col-span-1 md:col-span-2", // Featured project - takes more space
       category: "Web Development",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
