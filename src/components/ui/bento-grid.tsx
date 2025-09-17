@@ -1,22 +1,19 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import type { ComponentPropsWithoutRef, ReactNode } from "react";
-
-
-
+import React from "react";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
-  children: ReactNode;
+interface BentoGridProps extends React.HTMLAttributes<HTMLDivElement> {
+  children: React.ReactNode;
   className?: string;
 }
 
-interface BentoCardProps extends ComponentPropsWithoutRef<"div"> {
+interface BentoCardProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string;
   className: string;
-  background: ReactNode;
-  Icon: React.ElementType;
+  background: React.ReactNode;
+  Icon: React.ComponentType<{ className?: string }>;
   description: string;
   href: string;
   cta: string;
