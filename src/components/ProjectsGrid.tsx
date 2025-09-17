@@ -51,7 +51,7 @@ const ProjectIcon = ({ className }: { className?: string }) => (
 // Background image component
 const ProjectBackground = ({ imageSrc }: { imageSrc: string }) => (
   <div 
-    className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 group-hover:opacity-10 transition-opacity duration-300"
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-105"
     style={{ 
       backgroundImage: `url(${imageSrc})`,
       backgroundSize: 'cover',

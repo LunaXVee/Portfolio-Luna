@@ -1,3 +1,4 @@
+// src/components/ui/bento-grid.tsx
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import React from "react";
 
@@ -46,63 +47,55 @@ const BentoCard = ({
   <div
     key={name}
     className={cn(
-      "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl",
-      // light styles
-      "bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
-      // dark styles
-      "transform-gpu dark:bg-background dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
+      "group relative col-span-3 flex flex-col overflow-hidden rounded-xl",
+      "bg-white border border-neutral-200",
+      "[box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
+      "hover:[box-shadow:0_0_0_1px_rgba(0,0,0,.1),0_4px_8px_rgba(0,0,0,.1),0_20px_40px_rgba(0,0,0,.1)]",
+      "transition-all duration-300",
       className,
     )}
     {...props}
   >
-    <div>{background}</div>
-    <div className="p-4">
-      <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 transition-all duration-300 lg:group-hover:-translate-y-10">
-        <Icon className="h-12 w-12 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75" />
-        <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
-          {name}
-        </h3>
-        <p className="max-w-lg text-neutral-400">{description}</p>
+    {/* Background Image Section - Top 60% */}
+    <div className="relative flex-1 min-h-[60%] overflow-hidden">
+      {background}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+    </div>
+    
+    {/* Dark Text Section - Bottom 40% */}
+    <div className="relative bg-neutral-900 p-6 min-h-[40%] flex flex-col justify-between">
+      <div className="flex flex-col gap-3">
+        <div className="flex items-center gap-3">
+          <Icon className="h-8 w-8 text-neutral-300 transition-all duration-300 ease-in-out group-hover:text-white group-hover:scale-110" />
+          <h3 className="text-lg font-semibold text-white leading-tight">
+            {name}
+          </h3>
+        </div>
+        <p className="text-neutral-400 text-sm leading-relaxed group-hover:text-neutral-300 transition-colors duration-300">
+          {description}
+        </p>
       </div>
 
-      <div
-        className={cn(
-          "lg:hidden pointer-events-none flex w-full translate-y-0 transform-gpu flex-row items-center transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100",
-        )}
-      >
-        <Button
-          variant="link"
-          asChild
-          size="sm"
-          className="pointer-events-auto p-0"
-        >
-          <a href={href}>
-            {cta}
-            <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
-          </a>
-        </Button>
+      {/* CTA Button - Always visible on mobile, hover on desktop */}
+      <div className="mt-4">
+        <div className="lg:opacity-0 lg:translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300">
+          <Button
+            variant="link"
+            asChild
+            size="sm"
+            className="p-0 text-neutral-400 hover:text-white text-sm"
+          >
+            <a href={href}>
+              {cta}
+              <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
+            </a>
+          </Button>
+        </div>
       </div>
     </div>
 
-    <div
-      className={cn(
-        "hidden lg:flex pointer-events-none absolute bottom-0 w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100",
-      )}
-    >
-      <Button
-        variant="link"
-        asChild
-        size="sm"
-        className="pointer-events-auto p-0"
-      >
-        <a href={href}>
-          {cta}
-          <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
-        </a>
-      </Button>
-    </div>
-
-    <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
+    {/* Subtle hover overlay on the entire card */}
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
   </div>
 );
 

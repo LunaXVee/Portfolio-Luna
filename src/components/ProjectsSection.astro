@@ -4,10 +4,13 @@ import ProjectsGrid from './ProjectsGrid.tsx';
 import { projects } from '../data/projectsData.ts';
 ---
 
-<section class="py-20 px-4 max-w-7xl mx-auto">
+<section class="py-20 px-4 max-w-7xl mx-auto bg-neutral-800s">
   <h2 class="text-4xl font-bold text-center mb-12 text-neutral-800 dark:text-neutral-200">
-    My Projects
+    My Latest Work
   </h2>
+  <h3 class="text-2xl text-center mb-12 text-neutral-800 dark:text-neutral-200">
+    Each project is a testament of my learning journey</h3>
   
   <ProjectsGrid projects={projects} client:load />
 </section>
+
