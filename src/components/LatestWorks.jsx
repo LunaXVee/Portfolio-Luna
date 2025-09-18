@@ -8,7 +8,7 @@ const LatestWorks = () => {
       title: "FUNDISA",
       description: "AI powered SMS educational chatbot that uses both English and Shona",
       image: "/images/project7.png",
-      category: "Mobile App",
+      category: "AI Chatbot",
       color: "bg-amber-500"
     },
     {
@@ -21,10 +21,10 @@ const LatestWorks = () => {
     },
     {
       id: 3,
-      title: "3D Interactive Website",
-      description: "Responsive 3D web application where heads of characters turn to face the computer mouse in real-time",
-      image: "/images/project4.JPG",
-      category: "Branding",
+      title: "Z-Wallet - Mobile E-Wallet",
+      description: "Comprehensive mobile payment solution featuring QR code payments, AI voice assistant, multi-service platform, and secure authentication.",
+      image: "/images/zwallet.png",
+      category: "Mobile App",
       color: "bg-orange-500"
     }
   ]
@@ -42,9 +42,9 @@ const LatestWorks = () => {
             Perfect solution for digital experience
           </p>
           <div className="flex justify-center">
-            <button className="btn btn-outline text-white border-white hover:bg-white hover:text-[#0A3044]"> {/* White outline button */}
+            <a className="btn btn-outline text-white border-white hover:bg-white hover:text-[#0A3044]" href="/projects"> {/* White outline button */}
               Explore More Works
-            </button>
+            </a>
           </div>
         </div>
 
@@ -73,11 +73,11 @@ const LatestWorks = () => {
                 <div className="card-actions justify-between items-center mt-4">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-[#0A3044] rounded-full"></div> {/* Dark dot */}
-                    <span className="text-xs text-gray-500">2024</span> {/* Dark gray text */}
+                    <span className="text-xs text-gray-500">2025</span> {/* Dark gray text */}
                   </div>
-                  <button className="btn btn-sm text-white" style={{ backgroundColor: '#0A3044' }}> {/* Dark button */}
+                  <a className="btn btn-sm text-white" style={{ backgroundColor: '#0A3044' }} href="/projects"> {/* Dark button */}
                     View Project
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
