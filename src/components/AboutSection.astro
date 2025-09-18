@@ -29,7 +29,7 @@ import ScrollingTechStack from '../components/ScrollingTechStack.jsx';
     <div class="left-text">
         <h1>Hello There!</h1>
         <h1>I'm Luna</h1>
-        <div class="experience">
+        <div class="experience hidden md:block">
 			<span class="number">4</span>
 			<div class="label">
 				<span>YEARS</span>
@@ -144,7 +144,7 @@ import ScrollingTechStack from '../components/ScrollingTechStack.jsx';
 	/* Add these animations to your existing <style> section */
 
 .tech{
-    background-color: #0A3044;
+    background-color: #09090B;
     color: #F8F7F2;
 }
 @keyframes fadeInHighlight {
@@ -473,6 +473,16 @@ main{
         flex-direction: column;
         gap: 1.5rem;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .experience {
+        display: none !important;
+    }
+
+    .right-text {
+        margin-bottom: 2rem;
     }
 }
 @media screen and (max-width: 1024px) {

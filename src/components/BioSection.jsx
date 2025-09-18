@@ -14,12 +14,12 @@ const BioSection = () => {
         marginRight: '3rem'
       }}>
         I develop{" "}
-        <Highlighter action="box" color="#20b2aa" animationDuration={1200}>
+        <Highlighter action="box" color="#20b2aa" animationDuration={1800}>
           custom software solutions
         </Highlighter>{" "}
         that help businesses grow
         and{" "}
-        <Highlighter action="underline" color="#F48F71" animationDuration={1000}>
+        <Highlighter action="underline" color="#F48F71" animationDuration={1400}>
          communities thrive
          </Highlighter>{" "}
 

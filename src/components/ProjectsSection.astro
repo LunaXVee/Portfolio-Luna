@@ -3,6 +3,7 @@
 import ProjectsGrid from './ProjectsGrid.tsx';
 import { projects } from '../data/projectsData.ts';
 import Navbar from "../components/NavBar.jsx";
+import Footer from '../components/Footer.jsx'; // ← Add this import
 
 ---
 
@@ -17,4 +18,11 @@ import Navbar from "../components/NavBar.jsx";
   
   <ProjectsGrid projects={projects} client:load />
 </section>
+
+<!-- Footer Section -->
+<section class="footer-section">
+  <Footer />
+</section>
+
+
 

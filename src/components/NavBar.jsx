@@ -11,19 +11,19 @@ export default function Navbar() {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-52 p-2 shadow" style={{ fontSize: '22rem' }}>
-        <li><a className="text-base">Homepage</a></li>
-        <li><a className="text-base">About Me</a></li>
-        <li><a className="text-base">Projects</a></li>
-        <li><a className="text-base">Contact</a></li>
+        <li><a href="/" className="text-base hover:text-neutral-900 hover:bg-neutral-50 transition-all duration-200">Homepage</a></li>
+        <li><a href="/about" className="text-base hover:text-neutral-900 hover:bg-neutral-50 transition-all duration-200">About Me</a></li>
+        <li><a href="/projects" className="text-base hover:text-neutral-900 hover:bg-neutral-50 transition-all duration-200">Projects</a></li>
+        <li><a href="/contact" className="text-base hover:text-neutral-900 hover:bg-neutral-50 transition-all duration-200">Contact</a></li>
 
       </ul>
     </div>
     </div>
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl text-[#0A3044]">LunaXVee</a>
+    <a className="btn btn-ghost text-xl text-[#09090B]">LunaXVee</a>
   </div>
   <div className="navbar-end mr-5 ">
-    <a className="btn" style={{ backgroundColor: '#0A3044' }}>Download Resume/CV</a>
+    <a className="btn bg-teal-600 hover:scale-105 border-none text-white font-semibold transition-all duration-300" >Download Resume/CV</a>
   </div>
 </div>
  );
