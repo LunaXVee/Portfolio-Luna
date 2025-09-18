@@ -16,7 +16,7 @@ export const projects: Project[] = [
     name: "FUNDISA - AI SMS Chatbot",
     description: "Winner of UbuntuNet Hackathon 2024 &  AWITAI incubation by UNESCO, OCP, and AI Movement 2025. Bilingual AI chatbot making education accessible via SMS.",
     href: "/projects/fundisa",
-    cta: "View Project",
+    cta: "Learn More",
     image: "/images/project7.png",
     className: "col-span-1 md:col-span-2", // Featured project
     category: "AI/Machine Learning",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     name: "Z-Wallet - Mobile E-Wallet",
     description: "Comprehensive mobile payment solution for the Zimbabwean market featuring QR code payments, AI voice assistant, multi-service platform, and secure authentication.",
     href: "/projects/zwallet",
-    cta: "View Project",
+    cta: "Learn More",
     image: "/images/zwallet.png",
     className: "col-span-1 md:col-span-2",
     category: "Mobile Development",
