@@ -15,7 +15,7 @@ export const projects: Project[] = [
   {
     name: "FUNDISA - AI SMS Chatbot",
     description: "Winner of UbuntuNet Hackathon 2024 &  AWITAI incubation by UNESCO, OCP, and AI Movement 2025. Bilingual AI chatbot making education accessible via SMS.",
-    href: "/projects/fundisa",
+    href: "/contact",
     cta: "Learn More",
     image: "/images/project7.png",
     className: "col-span-1 md:col-span-2", // Featured project
@@ -25,7 +25,7 @@ export const projects: Project[] = [
   {
     name: "TFT - Membership Database",
     description: "Full-stack farming membership system managing 277+ members across 8 provinces with real-time analytics.",
-    href: "/projects/tft-database",
+    href: "https://tft-database.netlify.app/",
     cta: "View Project", 
     image: "/images/project2.png",
     className: "col-span-1",
@@ -36,8 +36,8 @@ export const projects: Project[] = [
   {
     name: "Sunflower - Solar Tracker",
     description: "Hardware project mimicking sunflower behavior to maximize solar energy capture with custom PCB design",
-    href: "/projects/solar-tracker",
-    cta: "View Project",
+    href: "/contact",
+    cta: "Learn More",
     image: "/images/tracker.png",
     className: "col-span-1", // Featured project
     category: "Hardware/IoT",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     name: "Z-Wallet - Mobile E-Wallet",
     description: "Comprehensive mobile payment solution for the Zimbabwean market featuring QR code payments, AI voice assistant, multi-service platform, and secure authentication.",
-    href: "/projects/zwallet",
+    href: "/contact",
     cta: "Learn More",
     image: "/images/zwallet.png",
     className: "col-span-1 md:col-span-2",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
   {
     name: "BabyShark - Streaming Platform",
     description: "Anime and Cartoon streaming platform with secure authentication and responsive design.",
-    href: "/projects/babyshark",
+    href: "https://babyshark-lunaxvee.netlify.app/",
     cta: "View Project",
     image: "/images/babyshark.png", 
     className: "col-span-1 md:col-span-2",
@@ -66,8 +66,8 @@ export const projects: Project[] = [
   {
     name: "TFT - Webpage Development",
     description: "Responsive web aplication for TFT farmers. Utilized UI/UX best principles",
-    href: "/projects/tft-database",
-    cta: "View Project", 
+    href: "/contact",
+    cta: "Learn More", 
     image: "/images/tft.png",
     className: "col-span-1",
     category: "Web Development",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
   {
     name: "Fizzpop - 3D Interactive Experience",
     description: "Interactive 3D soda can with real-time hover, zoom, and exploration features using Spline and React.",
-    href: "/projects/fizzpop",
+    href: "https://fizz-pop.vercel.app/",
     cta: "View Project",
     image: "/images/fizzpop.png",
     className: "col-span-1",
@@ -86,7 +86,7 @@ export const projects: Project[] = [
   {
     name: "Chika - 3D Web Experience",
     description: "Creative web app with dark-to-light transitions and 3D characters featuring mouse-tracking eye movements.",
-    href: "/projects/chika",
+    href: "https://chikacompanion.netlify.app/",
     cta: "View Project",
     image: "/images/project4.JPG",
     className: "col-span-1",
