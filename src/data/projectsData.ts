@@ -38,7 +38,7 @@ export const projects: Project[] = [
     description: "Hardware project mimicking sunflower behavior to maximize solar energy capture with custom PCB design",
     href: "/contact2",
     cta: "Learn More",
-    image: "/images/tracker.png",
+    image: "/images/tracker.webp",
     className: "col-span-1", // Featured project
     category: "Hardware/IoT",
     technologies: ["Arduino", "PCB Design", "3D Printing", "Embedded Systems"],
