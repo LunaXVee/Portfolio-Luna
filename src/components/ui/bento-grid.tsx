@@ -24,7 +24,7 @@ const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
   return (
     <div
       className={cn(
-        "grid w-full auto-rows-[22rem] grid-cols-3 gap-4",
+        "grid w-full auto-rows-[24rem] grid-cols-3 gap-4", // Increased height from 22rem to 24rem
         className,
       )}
       {...props}
@@ -56,28 +56,28 @@ const BentoCard = ({
     )}
     {...props}
   >
-    {/* Background Image Section - Top 60% */}
-    <div className="relative flex-1 min-h-[60%] overflow-hidden">
+    {/* Background Image Section - Top 55% */}
+    <div className="relative flex-1 min-h-[55%] overflow-hidden">
       {background}
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
     </div>
     
-    {/* Dark Text Section - Bottom 40% */}
-    <div className="relative bg-neutral-900 p-6 min-h-[40%] flex flex-col justify-between">
-      <div className="flex flex-col gap-3">
+    {/* Dark Text Section - Bottom 45% with better spacing */}
+    <div className="relative bg-neutral-900 p-6 min-h-[45%] flex flex-col">
+      <div className="flex-1 flex flex-col gap-3">
         <div className="flex items-center gap-3">
-          <Icon className="h-8 w-8 text-neutral-300 transition-all duration-300 ease-in-out group-hover:text-white group-hover:scale-110" />
-          <h3 className="text-lg font-semibold text-white leading-tight">
+          <Icon className="h-7 w-7 text-neutral-300 transition-all duration-300 ease-in-out group-hover:text-white group-hover:scale-110" />
+          <h3 className="text-lg font-semibold text-white leading-tight line-clamp-1">
             {name}
           </h3>
         </div>
-        <p className="text-neutral-400 text-sm leading-relaxed group-hover:text-neutral-300 transition-colors duration-300">
+        <p className="text-neutral-400 text-sm leading-relaxed group-hover:text-neutral-300 transition-colors duration-300 line-clamp-3 flex-1">
           {description}
         </p>
       </div>
 
-      {/* CTA Button - Always visible on mobile, hover on desktop */}
-      <div className="mt-4">
+      {/* CTA Button - Fixed at bottom */}
+      <div className="mt-4 pt-2">
         <div className="lg:opacity-0 lg:translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300">
           <Button
             variant="link"

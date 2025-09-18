@@ -1,88 +1,109 @@
 // src/data/projectsData.ts
 
 export interface Project {
-    name: string;
-    description: string;
-    href: string;
-    cta: string;
-    image: string;
-    className: string;
-    category?: string;
-    technologies?: string[];
+  name: string;
+  description: string;
+  href: string;
+  cta: string;
+  image: string;
+  className: string;
+  category?: string;
+  technologies?: string[];
+}
+
+export const projects: Project[] = [
+  {
+    name: "FUNDISA - AI SMS Chatbot",
+    description: "Winner of UbuntuNet Hackathon 2024 &  AWITAI incubation by UNESCO, OCP, and AI Movement 2025. Bilingual AI chatbot making education accessible via SMS.",
+    href: "/projects/fundisa",
+    cta: "View Project",
+    image: "/images/project7.png",
+    className: "col-span-1 md:col-span-2", // Featured project
+    category: "AI/Machine Learning",
+    technologies: ["Python", "AI/ML", "SMS APIs", "React", "Astro"],
+  },
+  {
+    name: "TFT - Membership Database",
+    description: "Full-stack farming membership system managing 277+ members across 8 provinces with real-time analytics.",
+    href: "/projects/tft-database",
+    cta: "View Project", 
+    image: "/images/project2.png",
+    className: "col-span-1",
+    category: "Web Development",
+    technologies: ["Astro", "React", "Tailwind CSS", "MySQL", "Magic UI"],
+  },
+  
+  {
+    name: "Sunflower - Solar Tracker",
+    description: "Hardware project mimicking sunflower behavior to maximize solar energy capture with custom PCB design",
+    href: "/projects/solar-tracker",
+    cta: "View Project",
+    image: "/images/tracker.png",
+    className: "col-span-1", // Featured project
+    category: "Hardware/IoT",
+    technologies: ["Arduino", "PCB Design", "3D Printing", "Embedded Systems"],
+  },
+  {
+    name: "Z-Wallet - Mobile E-Wallet",
+    description: "Comprehensive mobile payment solution for the Zimbabwean market featuring QR code payments, AI voice assistant, multi-service platform, and secure authentication.",
+    href: "/projects/zwallet",
+    cta: "View Project",
+    image: "/images/zwallet.png",
+    className: "col-span-1 md:col-span-2",
+    category: "Mobile Development",
+    technologies: ["Flutter", "QR Integration", "Payment APIs", "SMS Verification"],
+  },
+  {
+    name: "BabyShark - Streaming Platform",
+    description: "Anime and Cartoon streaming platform with secure authentication and responsive design.",
+    href: "/projects/babyshark",
+    cta: "View Project",
+    image: "/images/babyshark.png", 
+    className: "col-span-1 md:col-span-2",
+    category: "Web Development",
+    technologies: ["React", "Astro", "Tailwind CSS", "Authentication APIs"],
+  },
+  {
+    name: "TFT - Webpage Development",
+    description: "Responsive web aplication for TFT farmers. Utilized UI/UX best principles",
+    href: "/projects/tft-database",
+    cta: "View Project", 
+    image: "/images/tft.png",
+    className: "col-span-1",
+    category: "Web Development",
+    technologies: ["Astro", "React", "Tailwind CSS", "MySQL", "Magic UI"],
+  },
+  {
+    name: "Fizzpop - 3D Interactive Experience",
+    description: "Interactive 3D soda can with real-time hover, zoom, and exploration features using Spline and React.",
+    href: "/projects/fizzpop",
+    cta: "View Project",
+    image: "/images/fizzpop.png",
+    className: "col-span-1",
+    category: "3D Web Development", 
+    technologies: ["React", "Vite", "Spline", "3D Graphics", "JavaScript"],
+  },
+  {
+    name: "Chika - 3D Web Experience",
+    description: "Creative web app with dark-to-light transitions and 3D characters featuring mouse-tracking eye movements.",
+    href: "/projects/chika",
+    cta: "View Project",
+    image: "/images/project4.JPG",
+    className: "col-span-1",
+    category: "3D Web Development",
+    technologies: ["Astro", "React", "Spline", "Animation APIs", "Magic UI"],
   }
-  
-  export const projects: Project[] = [
-    {
-      name: "E-commerce Platform",
-      description: "A modern e-commerce solution with React and Node.js, featuring real-time inventory management and secure payment processing.",
-      href: "/projects/ecommerce",
-      cta: "View Project",
-      image: "/images/project7.png",
-      className: "col-span-1 md:col-span-2", // Featured project - takes more space
-      category: "Web Development",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    },
-    {
-      name: "Portfolio Website",
-      description: "Personal portfolio built with Astro and Tailwind CSS, optimized for performance and accessibility.",
-      href: "/projects/portfolio",
-      cta: "View Project", 
-      image: "/images/project2.png",
-      className: "col-span-1",
-      category: "Web Development",
-      technologies: ["Astro", "React", "Tailwind CSS"],
-    },
-    {
-      name: "Mobile App Design",
-      description: "UI/UX design for a productivity mobile application with intuitive user flows and modern aesthetics.",
-      href: "/projects/mobile-app",
-      cta: "View Design",
-      image: "/images/project3.png", 
-      className: "col-span-1",
-      category: "UI/UX Design",
-      technologies: ["Figma", "Prototyping", "User Research"],
-    },
-    {
-      name: "Brand Identity System",
-      description: "Complete brand identity design for a tech startup, including logo, color palette, and brand guidelines.",
-      href: "/projects/brand-identity",
-      cta: "View Project",
-      image: "/images/project4.JPG",
-      className: "col-span-1 md:col-span-2", // Featured project
-      category: "Branding",
-      technologies: ["Adobe Illustrator", "Photoshop", "Brand Strategy"],
-    },
-    {
-      name: "Dashboard Analytics",
-      description: "Full-stack web application with real-time analytics dashboard and data visualization components.",
-      href: "/projects/web-app",
-      cta: "View Project",
-      image: "/images/project5.PNG",
-      className: "col-span-1",
-      category: "Web Development", 
-      technologies: ["Next.js", "D3.js", "PostgreSQL", "Prisma"],
-    },
-    {
-      name: "iOS App Development",
-      description: "Native iOS application for task management with SwiftUI and CoreData integration.",
-      href: "/projects/ios-app",
-      cta: "View Project",
-      image: "/images/project6.JPG", // Add more images as needed
-      className: "col-span-1",
-      category: "Mobile Development",
-      technologies: ["Swift", "SwiftUI", "CoreData"],
-    }
-  ];
-  
-  // Helper functions to filter projects
-  export const getProjectsByCategory = (category: string): Project[] => {
-    return projects.filter(project => project.category === category);
-  };
-  
-  export const getFeaturedProjects = (): Project[] => {
-    return projects.filter(project => project.className.includes('col-span-2'));
-  };
-  
-  export const getAllCategories = (): string[] => {
-    return [...new Set(projects.map(project => project.category || ''))].filter(Boolean);
-  };
+];
+
+// Helper functions to filter projects
+export const getProjectsByCategory = (category: string): Project[] => {
+  return projects.filter(project => project.category === category);
+};
+
+export const getFeaturedProjects = (): Project[] => {
+  return projects.filter(project => project.className.includes('col-span-2'));
+};
+
+export const getAllCategories = (): string[] => {
+  return [...new Set(projects.map(project => project.category || ''))].filter(Boolean);
+};
