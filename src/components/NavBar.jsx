@@ -44,7 +44,9 @@ export default function Navbar({ dark = false }) {
         <a className={`btn btn-ghost text-xl ${textColor}`}>LunaXVee</a>
       </div>
       <div className="navbar-end mr-5">
-        <a className="btn bg-teal-600 hover:scale-105 border-none text-white font-semibold transition-all duration-300">
+        <a href="/resume.pdf" 
+          download="Vimbai_Resume.pdf"
+        className="btn bg-teal-600 hover:scale-105 border-none text-white font-semibold transition-all duration-300">
           Download Resume/CV
         </a>
       </div>
