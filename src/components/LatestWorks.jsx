@@ -6,7 +6,7 @@ const LatestWorks = () => {
     {
       id: 1,
       title: "FUNDISA",
-      description: "AI powered SMS educational chatbot that uses both English and Shona",
+      description: "AI powered SMS educational chatbot that uses both English and Shona. Making education accessible in remote communities",
       image: "/images/project7.png",
       category: "AI Chatbot",
       color: "bg-amber-500"
@@ -22,7 +22,7 @@ const LatestWorks = () => {
     {
       id: 3,
       title: "Z-Wallet - Mobile E-Wallet",
-      description: "Comprehensive mobile payment solution featuring QR code payments, AI voice assistant, multi-service platform, and secure authentication.",
+      description: "Comprehensive mobile payment solution featuring QR code payments, AI voice assistant, multi-service platform, and secure authentication",
       image: "/images/zwallet.png",
       category: "Mobile App",
       color: "bg-orange-500"
@@ -39,7 +39,7 @@ const LatestWorks = () => {
             <div className="ml-4 w-20 h-1 bg-button rounded-full"></div>
           </div>
           <p className="text-lg text-gray-300 mb-8"> {/* Light gray text */}
-            Perfect solution for digital experience
+          Crafting digital experiences that solve real problems
           </p>
           <div className="flex justify-center">
             <a className="btn btn-outline text-white border-white hover:bg-white hover:text-[#0A3044]" href="/projects"> {/* White outline button */}
