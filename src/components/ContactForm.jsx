@@ -28,14 +28,14 @@ const ContactForm = () => {
       
       // Firebase config - replace with your actual config
       const firebaseConfig = {
-        apiKey: "AIzaSyCtahjLjjOl61mJzCgf_2p0sNcS8kT-GO0",
-        authDomain: "luna-portfolio-248a5.firebaseapp.com",
-        projectId: "luna-portfolio-248a5",
-        storageBucket: "luna-portfolio-248a5.firebasestorage.app",
-        messagingSenderId: "192164670810",
-        appId: "1:192164670810:web:096af3e4c913872b8dd763",
-        measurementId: "G-QL8N358GME"
+        apiKey: import.meta.env.PUBLIC_FIREBASE_API_KEY,
+        authDomain: import.meta.env.PUBLIC_FIREBASE_AUTH_DOMAIN,
+        projectId: import.meta.env.PUBLIC_FIREBASE_PROJECT_ID,
+        storageBucket: import.meta.env.PUBLIC_FIREBASE_STORAGE_BUCKET,
+        messagingSenderId: import.meta.env.PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+        appId: import.meta.env.PUBLIC_FIREBASE_APP_ID
       };
+      
 
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
